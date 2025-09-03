@@ -6,3 +6,9 @@
 * {
     font-family: "Lora", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
+:root {
+    --body-color: #F5F0FF;
+    --container-color: #FFFFFF;
+    --first-color-dark: #1E0849;
+}
