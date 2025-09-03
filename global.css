@@ -1,14 +1,22 @@
-.orienta-regular {
-  font-family: "Orienta", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/font/poppins.regular.ttf);
 }
+
 * {
     font-family: "Lora", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--body-color);
 }
 
 :root {
     --body-color: #F5F0FF;
     --container-color: #FFFFFF;
     --first-color-dark: #1E0849;
+    --text-color-light: #A197B4;
 }
