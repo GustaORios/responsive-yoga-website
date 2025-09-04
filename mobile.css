@@ -25,10 +25,6 @@
     .subtitle-wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        max-width: 600px;
-        margin: auto;
     }
 
     .subtitle-div {
@@ -83,6 +79,7 @@
         flex-direction: row;
         gap: 20px;
         align-items: center;
+        flex-direction: row-reverse;
     }
 
     .stat>h2 {
