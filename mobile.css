@@ -1,3 +1,5 @@
+/* Mobile Styles */
+@media screen and (min-width: 768px) {    
 /*section1 start*/
 
 /*section1 end*/
@@ -21,3 +23,4 @@
 /*section6 start*/
 
 /*section6 end*/
+}
