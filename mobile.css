@@ -1,5 +1,5 @@
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) {    
 
 /*section1 start*/
 
@@ -175,3 +175,4 @@
 /*section6 end*/
 
 }
+
