@@ -2,10 +2,187 @@
 /*section2 start*/
 
 /*section1 start*/
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    padding-top: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section1-content {
+    width: 50%;
+}
+
+h1 {
+    color: var(--first-color-dark);
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.7rem;
+}
+
+p {
+    padding-left: 15px;
+}
+
+.highlight {
+    font-size: 4.4rem;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 8px;
+    display: inline-block;
+    transform: rotate(10deg);
+}
+
+#home-circle {
+    position: relative;
+    top: -100px;
+}
+
+.subtitle {
+    margin-top: 25px;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.section1-home-yoga img {
+    max-width: 500px;
+}
+
+.stats {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.stat {
+    text-align: center;
+}
+
+div .stat {
+    margin-top: 30px;
+}
+
+.stat>h2 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+.stat>p {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    font-size: 1rem;
+}
+
 
 /*section1 end*/
 
 /*section2 start*/
+.section2 {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    padding-top: 10px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.section2-content {
+    display: flex;
+
+}
+
+.yoga-context {
+    display: flex;
+    align-items: center;
+}
+
+.yoga-text {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 500px;
+}
+
+.yoga-text #liststar {
+    position: absolute;
+    width: 64px;
+    height: 72.86px;
+    top: 820px;
+
+}
+
+
+.yoga-text p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+.next-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./assets/list-ellipse-img.png') no-repeat center center;
+    background-size: 9rem;
+    width: 400px;
+    height: 200px;
+    padding: 0;
+    border-radius: 0;
+    text-decoration: none;
+    border: none;
+    color: linear-gradient(90deg, #f7669d, #a252e0);
+}
+
+.next-btn a {
+    background: linear-gradient(73.19deg, #FF52AF 11.6%, #9F53FF 83.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#listellipse {
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    top: 830px;
+}
+
+.yoga-image {
+    margin-right: 30px;
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.yoga-image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
 
 /*section2 end*/
 
