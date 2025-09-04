@@ -19,9 +19,6 @@ h3,
 .title {
     color: var(--text-color-light);
     font-family: "Lora", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
