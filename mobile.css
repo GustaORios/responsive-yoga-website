@@ -295,9 +295,10 @@ body {
     .section3 {
         padding: 80px 50px;
         flex-direction: row;
-        gap: 50px;
+        gap: 40px;
         justify-content: center;
         align-items: center;
+        flex-direction: row-reverse;
     }
     
     .section3 .typo {
@@ -306,10 +307,12 @@ body {
 
     .section3 .main-title {
         font-size: 50px;
+        width: 70%;
     }
 
     .section3 .typo p {
         font-size: 18px;
+        width: 95%;
     }
 
     .section3 .section3-content {
@@ -331,24 +334,34 @@ body {
         height: 100%;
         z-index: 2;
     }
+
     
     .section3 .heart-rate {
-        top: 25%;
+        top: -10%;
         left: 20%;
+        width: 25%;
     }
-    
+
+    .section3 .free-courses .number-text,
+    .section3 .free-courses h4,
+    .section3 .figcaption h4,
+    .section3 .figcaption .bpm-text{
+    font-size: 16px;
+    font-weight: normal;
+}
     .section3 .free-courses {
-        bottom: 25%;
-        right: 20%;
+        bottom: -20%;
+        right: 0%;
     }
 
     /* SECTION 4 - PC */
     .section4 {
-        padding: 80px 50px;
+        margin-top: 20%;
         flex-direction: row;
-        gap: 50px;
+        gap: 10px;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .section4 .typo {
@@ -357,10 +370,12 @@ body {
 
     .section4 .main-title {
         font-size: 50px;
+        width: 50%;
     }
 
     .section4 .typo p {
         font-size: 18px;
+        width: 80%;
     }
 
     .section4 .section4-content {
@@ -377,14 +392,19 @@ body {
     }
     
     .section4 .top-image-container {
-        top: 0;
-        left: 0;
-        z-index: 2;
+        position: absolute;
+        top: -80%;
+        right: 20%;
+        z-index: 100;
+        width: 80%;
+        border: 2px #F5F0FF;
     }
     
     .section4 .bottom-image-container {
-        top: 0;
-        left: -50px; /* 겹치는 효과 */
+        position: absolute; 
+        top: 70%;
+        left: -50px;
+        width: 80%;
         z-index: 1;
     }
     
@@ -393,14 +413,15 @@ body {
     }
     
     .section4 .top-image-container .text-bubble {
-        top: 20%;
+        top: 40%;
         left: 80%;
     }
     
     .section4 .bottom-image-container .text-bubble {
         top: 80%;
-        left: -10%;
+        left: -5%;
         right: auto;
+        width: 38%;
     }
 }
 
