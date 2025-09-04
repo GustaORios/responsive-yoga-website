@@ -1,3 +1,6 @@
+@media screen and (max-width: 767px) {
+/*section2 start*/
+
 /*section1 start*/
 .section1 {
     display: flex;
@@ -466,3 +469,4 @@ div .stat {
 /*section6 start*/
 
 /*section6 end*/
+}
