@@ -23,7 +23,7 @@ body {
 :root {
     --body-color: #F5F0FF;
     --container-color: #FFFFFF;
-    --first-color-dark: #1E0849;
+    --first-color: #E5D9FD;
     --text-color-light: #A197B4;
     --gradient-color: linear-gradient(to right, #FF52AF, #9F53FF);
     
@@ -37,4 +37,9 @@ body {
     --font-size-h4: 0.938rem;      /* 15px */
     --font-size-small: 0.813rem;   /* 13px */
     --font-size-smaller: 0.75rem;  /* 12px */
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --first-color: #1E0849;
+    }
 }
