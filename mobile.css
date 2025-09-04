@@ -15,6 +15,65 @@
 /*section4 end*/
 
 /*section5 start*/
+section.section5 .title {
+    margin: auto;
+    width: 55%;
+    text-align: center;
+}
+
+section.section5 .title h2 {
+    font-size: var(--font-size-bigger);
+    font-weight: normal;
+}
+
+section.section5 .title h2.decorate-h2 {
+    display: inline-block;
+    background: linear-gradient(90deg, #FF52AF, #9F53FF);
+    background: -webkit-linear-gradient(0deg, #FF52AF, #9F53FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.follow-btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 3rem;
+    background: var(--gradient-color);
+    color: #fff;
+    border-radius: 10rem;
+    height: 88px;
+    width: 88px;
+    justify-content: center;
+    margin: auto;
+}
+
+.image-flex-top {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.right-follow-yoga-image {
+    margin-top: 2rem;
+}
+
+.image-flex-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-flex-bottom .image-item {
+    align-self: center;
+}
+
+.image-flex-bottom .image-item.top-follow-yoga-image {
+    margin-right: 5rem;
+}
+.image-flex-bottom .image-item.bottom-follow-yoga-image {
+    margin-left: 5rem;
+}
+
 
 /*section5 end*/
 
@@ -47,6 +106,19 @@ section.section6 #send-mail-form .form-common-style {
     padding: 1rem;
     border: none;
     border-radius: 2rem;
+}
+
+section.section6 #send-mail-form input.form-common-style {
+    font-size: var(--font-size-smaller);
+}
+
+section.section6 #send-mail-form button.submit-btn {
+    background: var(--gradient-color);
+    display: flex;
+    color: #fff;
+    gap: 1rem;
+    box-shadow: 0px 4px 12px 0px rgba(91, 10, 255, 0.25);
+    justify-content: center;
 }
 /*section6 end*/
 
