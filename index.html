@@ -27,7 +27,45 @@
 
 <body>
     <header>
-        navpage
+        <nav>
+            <div class="logo">
+                <p class="title">Yoga</p>
+            </div>
+            <div class="menu-icon mobile-only">
+                <div class="mode-change">
+                    <img src="assets/light/moon.svg" />
+                </div>
+                <button class="menu" onclick="openMenu()">
+                    <img src="assets/light/menu.svg" />
+                </button>
+            </div>
+            <div class="menu-bar pc-only">
+                <ul class="pc-menu-items ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service1</a></li>
+                    <li><a href="#">Service2</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <button class="mode-change pc-only">
+                <img src="assets/light/moon.svg" />
+            </button>
+
+        </nav>
+        <div class="menu-container">
+            <button class="close-button" onclick="closeMenu()">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <ul class="menu-items">
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item"><a>Health</a></li>
+                <li class="menu-item"><a>Place</a></li>
+                <li class="menu-item"><a>Follow</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="hero">
@@ -152,8 +190,49 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer-introduction">
+            <div class="logo">
+                <div class="title">Yoga</div>
+            </div>
+            <div class="footer-description">
+                Take care of your health and your mind with the best Yoga classes.
+            </div>
+        </div>
+        <div class="company-info-container">
+            <div class="company-info" id="address">
+                <div class="title">Address</div>
+                <div class="details">12345 M/01 Sol Avenue, Lima, Peru</div>
+            </div>
+            <div class="company-info" id="contact">
+                <div class="title">Contact</div>
+                <div class="details">+123 456 7890 yoga@email.com</div>
+            </div>
+            <div class="company-info" id="office">
+                <div class="title">Office</div>
+                <div class="details">Monday - Saturday 9AM - 10PM</div>
+            </div>
+        </div>
+        <div class="separator">
+            <span></span>
+        </div>
+        <div class="sns-list-container">
+            <div class="sns-item">
+                <img src="assets/light/facebook.svg" alt="Facebook" />
+            </div>
+            <div class="sns-item">
+                <img src="assets/light/instagram.svg" alt="Instagram" />
+            </div>
+            <div class="sns-item">
+                <img src="assets/light/twitter.svg" alt="Twitter" />
+            </div>
+            <div class="sns-item">
+                <img src="assets/light/youtube.svg" alt="YouTube" />
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Copyright Bedimcode. All rights reserved
+        </div>
     </footer>
 </body>
 
