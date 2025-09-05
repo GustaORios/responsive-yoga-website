@@ -13,11 +13,59 @@
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Orienta&display=swap"
         rel="stylesheet">
     <title>Document</title>
+    <script>
+        const openMenu = () => {
+            console.log('openMenu');
+            document.querySelector('.menu-container').style.display = 'block';
+        }
+        const closeMenu = () => {
+            console.log('closeMenu');
+            document.querySelector('.menu-container').style.display = 'none';
+        }
+    </script>
 </head>
 
 <body>
     <header>
-        navpage
+        <nav>
+            <div class="logo">
+                <p class="title">Yoga</p>
+            </div>
+            <div class="menu-icon mobile-only">
+                <div class="mode-change">
+                    <img src="assets/light/moon.svg" />
+                </div>
+                <button class="menu" onclick="openMenu()">
+                    <img src="assets/light/menu.svg" />
+                </button>
+            </div>
+            <div class="menu-bar pc-only">
+                <ul class="pc-menu-items ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service1</a></li>
+                    <li><a href="#">Service2</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <button class="mode-change pc-only">
+                <img src="assets/light/moon.svg" />
+            </button>
+
+        </nav>
+        <div class="menu-container">
+            <button class="close-button" onclick="closeMenu()">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <ul class="menu-items">
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item"><a>Health</a></li>
+                <li class="menu-item"><a>Place</a></li>
+                <li class="menu-item"><a>Follow</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="hero">
@@ -63,16 +111,15 @@
         <section class="section2">
             <div class="section2-content">
                 <div class="yoga-image">
-                    <!--<img id="theme-image" src="./assets/Box group list.png" alt="Yoga Pose 2">-->
+                    <!--<img id="theme-image" src="./assets/Box group list.png" alt="Yoga Pose 2">
                 </div>
                 <div class="yoga-context">
                     <div class="yoga-text">
                         <img id="liststar" src="./assets/liststar-2-img.png" />
-
                         <p>Get a list of specific influencers in your niche at your fingertips so you can focus on
                             managing
-                            your status.</p>
-
+                            your status.
+                        </p>
                         <button class="next-btn">
                             <a href="#"> Next →</a>
                         </button>
@@ -89,14 +136,103 @@
 
         </section>
         <section class="section5">
-
+            <div class="follow-us-container">
+                <div class="title">
+                    <h2>Follow Us On Instagram</h2>
+                    <h2 class="decorate-h2">#YOGA</h2>
+                </div>
+                <div class="follow-btn">
+                    <div>Follow</div>
+                    <div><img width="16" src="assets/light/arrow-right.svg" alt="Arrow" /></div>
+                </div>
+            </div>
+            <div class="follow-yoga-1-image-container image-item">
+                <img class="mobile-only" src="assets/mobile/follow-yoga-1.png" alt="Follow Yoga 1" />
+                <img class="pc-only" src="assets/pc/follow-yoga-1.png" alt="Follow Yoga 1" />
+            </div>
+            <div class="follow-yoga-2-image-container image-item right-follow-yoga-image">
+                <img class="mobile-only" src="assets/mobile/follow-yoga-2.png" alt="Follow Yoga 2" />
+                <img class="pc-only" src="assets/pc/follow-yoga-2.png" alt="Follow Yoga 2" />
+            </div>
+            <div class="image-item top-follow-yoga-image follow-yoga-3-image-container">
+                <img class="mobile-only" src="assets/mobile/follow-yoga-3.png" alt="Follow Yoga 3" />
+                <img class="pc-only" src="assets/pc/follow-yoga-3.png" alt="Follow Yoga 3" />
+            </div>
+            <div class="image-item follow-yoga-4-image-container">
+                <img class="mobile-only" src="assets/mobile/follow-yoga-4.png" alt="Follow Yoga 4" />
+                <img class="pc-only" src="assets/pc/follow-yoga-4.png" alt="Follow Yoga 4" />
+            </div>
         </section>
         <section class="section6">
-
+            <div class="title">
+                Join our newsletter
+            </div>
+            <p class="description">
+                Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much more. Just enter your email.
+            </p>
+            <div class="form-area">
+                <form id="send-mail-form">
+                    <input class="form-common-style mobile-only" type="email" placeholder="For latest update send mail">
+                    <button class="form-common-style submit-btn mobile-only" type="submit">
+                        <div>Subscribe</div>
+                        <div style="display: flex;"><img width="16" src="assets/light/arrow-right.svg" alt="Arrow" /></div>
+                    </button>
+                    <div class="input-box pc-only">
+                        <input class="form-common-style" type="email" placeholder="For latest update send mail">
+                        <button type="submit">
+                            <div class="subscribe-content">
+                                <p>Subscribe</p>
+                                <div style="display: flex;"><img width="16" src="assets/light/arrow-right.svg" alt="Arrow" /></div>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer-introduction">
+            <div class="logo">
+                <div class="title">Yoga</div>
+            </div>
+            <div class="footer-description">
+                Take care of your health and your mind with the best Yoga classes.
+            </div>
+        </div>
+        <div class="company-info-container">
+            <div class="company-info" id="address">
+                <div class="title">Address</div>
+                <div class="details">12345 M/01 Sol Avenue, Lima, Peru</div>
+            </div>
+            <div class="company-info" id="contact">
+                <div class="title">Contact</div>
+                <div class="details">+123 456 7890 yoga@email.com</div>
+            </div>
+            <div class="company-info" id="office">
+                <div class="title">Office</div>
+                <div class="details">Monday - Saturday 9AM - 10PM</div>
+            </div>
+        </div>
+        <div class="separator">
+            <span></span>
+        </div>
+        <div class="sns-list-container">
+            <div class="sns-item">
+                <img src="assets/light/facebook.svg" alt="Facebook" />
+            </div>
+            <div class="sns-item">
+                <img src="assets/light/instagram.svg" alt="Instagram" />
+            </div>
+            <div class="sns-item">
+                <img src="assets/light/twitter.svg" alt="Twitter" />
+            </div>
+            <div class="sns-item">
+                <img src="assets/light/youtube.svg" alt="YouTube" />
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Copyright Bedimcode. All rights reserved
+        </div>
     </footer>
 </body>
 
