@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/font/poppins.regular.ttf);
+}
+
+* {
+    font-family: "Poppins", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, .title {
+    font-family: "Lora", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: var(--body-color);
+}
+
+:root {
+    --body-color: #F5F0FF;
+    --container-color: #FFFFFF;
+    --first-color-dark: #1E0849;
+    --text-color-light: #A197B4;
+}
