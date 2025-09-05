@@ -1,6 +1,6 @@
 # Yoga – UI Project
 
-This project is a frontend implementation of a yoga website inspired by a design created by **Young Kim**. The design was originally shared on Figma.
+This project is a frontend implementation of a yoga website inspired by a design created by **Young Kim**. The design was originally shared on [Figma](https://www.figma.com/design/KcAw1YMBYWmRYREsIoAz85/Figma-design---Responsive-yoga-website--Community-?node-id=0-1&p=f&t=zbyODq5ORqTqN3eX-0).
 
 ## About the Site
 
