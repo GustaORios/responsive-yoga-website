@@ -136,9 +136,7 @@
     right: 100%; 
     transform: translate(350%, 400%); 
 }
-.section3 .free-courses .info-box{
-    position: absolute;
-}
+
 
 .section3 .free-courses .number-text {
     font-size: 16px;
@@ -169,8 +167,8 @@
   .section4-content {
     flex: 1;
     display: flex;
-     flex-direction: column; /* 위아래 배치 */
-    gap: 0; /* 겹칠 거니까 간격 제거 */
+     flex-direction: column; 
+    gap: 0;
     position: relative;
   }
 
@@ -200,7 +198,8 @@
   .image-with-text {
     position: relative;
     border-radius: 20px;
-    overflow: hidden;
+    overflow: visible;
+    width: 100%;
   }
 
   .image-with-text img {
@@ -211,20 +210,40 @@
 
   .text-bubble {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    left: 75%;
+    bottom: 60%;
+    width: auto;
     background: white;
     border-radius: 12px;
-    padding: 10px 16px;
+    padding: 10px 10px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 15px;
+    min-width: 40%;
+    width: 30%;
   }
 
-  .text-bubble h4 {
-    margin: 0;
-    font-size: 16px;
+  .section4 .bottom-image-container .text-bubble {
+    left: -5%;
+    bottom: 12%;
   }
+
+
+  .section4 .text-bubble .bubble-icon {
+    width: 15%;
+    height: auto;
+}
+
+
+  .text-bubble h4 {
+    font-size: 14px;
+    background-image: linear-gradient(to right, #FF52AF, #9F53FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: normal;
+}
+
 
   .start-btn {
     display: inline-flex;
@@ -248,13 +267,17 @@
   }
 
   .top-image-container {
-  margin-bottom: -40px; /* 음수 마진으로 살짝 아래랑 겹치게 */
-  z-index: 2; /* 위에 오도록 */
+    position: relative;
+    margin-bottom: -40px; 
+    left: -20%;
+    z-index: 2;
   }
 
   .bottom-image-container {
-  z-index: 1;
+    position: relative;
+    z-index: 1;
   }
+
 }
 
 /*section4 end*/
