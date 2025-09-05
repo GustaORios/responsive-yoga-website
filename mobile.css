@@ -18,9 +18,13 @@
     }
 
     .highlight {
-        margin-top: 0px;
-        font-size: 3.9rem;
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: white;
+        padding: 5px 5px;
+        border-radius: 8px;
+        display: inline-block;
         transform: rotate(10deg);
+        font-size: 3.9rem;
     }
 
     .subtitle-wrapper {
@@ -59,14 +63,14 @@
         width: 190px;
         margin-top: 15px;
         background: linear-gradient(to right, #FF52AF, #9F53FF);
-        color: var(white);
+        color: white;
         padding: 10px 20px;
         border-radius: 40px;
         text-decoration: none;
     }
 
     #star {
-        width: 80px;
+        width: 95px;
     }
 
     .subtitle {
@@ -80,10 +84,12 @@
     }
 
     .stats {
+        margin-top: 40px;
+        display: flex;
         justify-content: space-around;
-        flex-direction: row;
-        gap: 20px;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     .stat>h2 {
@@ -110,6 +116,7 @@
     }
 
     .section2-content {
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
@@ -130,12 +137,18 @@
         margin-bottom: 20px;
     }
 
+    .yoga-image img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
     .next-btn {
         margin-top: 40px;
         width: 100%;
         height: 130px;
         background: url('./assets/list-ellipse-img.png') no-repeat center center;
         background-size: 9rem;
+        border: 0;
     }
 
     .next-btn a {
@@ -145,22 +158,24 @@
         background-clip: text;
     }
 
-    .yoga-text #liststar {
+    /*.yoga-text #liststar {
         position: absolute;
         width: 64px;
         height: 72.86px;
         top: 1300px;
         right: 320px;
+    }*/
+
+    #liststar {
+        display: none;
     }
 
 
 
-/*section2 end*/
+    /*section2 end*/
 
 /*section3 start*/
 /* section3-mobile-light */
-@media screen and (max-width:768px) {
-
 .section3 {
     background-color: #F5F0FF;
     display: flex;
@@ -426,9 +441,8 @@
     color: transparent;
     font-weight: normal;
 }
-}
 
-/*section4 end*/
+    /*section4 end*/
 
 /*section5 start*/
 section.section5 {
@@ -502,7 +516,7 @@ section.section5 .image-item {
     align-self: center;
 }
 
-/*section5 end*/
+    /*section5 end*/
 
 /*section6 start*/
 section.section6 {
