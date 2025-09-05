@@ -13,7 +13,11 @@
     text-decoration: none;
 }
 
-h1, h2, h3, .title {
+h1,
+h2,
+h3,
+.title {
+    color: var(--text-color-light);
     font-family: "Lora", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -48,6 +52,9 @@ body {
         --first-color: #1E0849;
         --title-color: #220953;
     }
+    /*.yoga-image {
+      background-image: url('./assets/Box group list-dark.png');
+    }*/
 }
 
 /* Mobile Styles */

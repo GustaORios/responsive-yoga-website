@@ -1,6 +1,4 @@
-@media screen and (min-width: 768px) {
-/*section2 start*/
-
+@media screen and (min-width: 767px) {
 /*section1 start*/
 .section1 {
     display: flex;
@@ -17,7 +15,7 @@
 }
 
 h1 {
-    color: var(--first-color-dark);
+    color: var(--text-color-light);
     font-family: 'Lora';
     font-style: normal;
     font-weight: 400;
@@ -25,6 +23,7 @@ h1 {
 }
 
 p {
+    color: var(--text-color-light);
     padding-left: 15px;
 }
 
@@ -46,7 +45,7 @@ p {
 .subtitle {
     margin-top: 25px;
     font-size: 1rem;
-    color: #555;
+    color: var(--text-color-light);
     margin-bottom: 25px;
 }
 
@@ -80,6 +79,7 @@ div .stat {
 }
 
 .stat>h2 {
+    color: var(--text-color-light);
     font-family: 'Lora';
     font-style: normal;
     font-weight: 400;
@@ -107,16 +107,15 @@ div .stat {
     padding-top: 10px;
     max-width: 1200px;
     margin: auto;
-
 }
 
 .section2-content {
     display: flex;
-
+    width: 100%;
 }
 
 .yoga-context {
-    display: flex;
+    display: inline;
     align-items: center;
 }
 
@@ -176,11 +175,15 @@ div .stat {
     flex: 1;
     min-width: 300px;
     text-align: center;
+    height: auto;
 }
 
-.yoga-image img {
-    max-width: 100%;
+.yoga-image {
+    min-width: 540px;
+    min-height: 230px;
+    background-repeat: no-repeat;
     border-radius: 15px;
+    background-image: url('./assets/Box group list.png');
 }
 
 
@@ -522,6 +525,5 @@ footer.footer {
     text-align: center;
     padding-top: 1.5rem;
 }
-
 /*footer end*/
 }
