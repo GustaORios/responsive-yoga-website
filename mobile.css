@@ -1,5 +1,5 @@
 /* Mobile Styles */
-@media screen and (max-width: 768px) {     
+@media screen and (max-width: 767px) {     
 /*section1 start*/
 
     .section1 {
@@ -166,10 +166,44 @@
 /*section4 end*/
 
 /*section5 start*/
+section.section5 {
+    display: grid;
+    grid-template-areas: 
+        "follow-us follow-us"
+        "follow-yoga-1 follow-yoga-2"
+        "follow-yoga-3 follow-yoga-3"
+        "follow-yoga-4 follow-yoga-4"
+    ;
+    column-gap: 1rem;
+}
+section.section5 .follow-us-container {
+    grid-area: follow-us;
+}
+section.section5 .follow-yoga-1-image-container {
+    grid-area: follow-yoga-1;
+    justify-self: flex-end;
+}
+section.section5 .follow-yoga-2-image-container {
+    grid-area: follow-yoga-2;
+    justify-self: flex-start;
+    margin-top: 5rem;
+}
+section.section5 .follow-yoga-3-image-container {
+    grid-area: follow-yoga-3;
+    margin-right: 5rem;
+}
+section.section5 .follow-yoga-4-image-container {
+    grid-area: follow-yoga-4;
+    margin-left: 5rem;
+}
+.image-item {
+    justify-self: center;
+}
 section.section5 .title {
     margin: auto;
     width: 55%;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 section.section5 .title h2 {
@@ -199,32 +233,9 @@ section.section5 .title h2.decorate-h2 {
     margin: auto;
 }
 
-.image-flex-top {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.right-follow-yoga-image {
-    margin-top: 2rem;
-}
-
-.image-flex-bottom {
-    display: flex;
-    flex-direction: column;
-}
-
-.image-flex-bottom .image-item {
+section.section5 .image-item {
     align-self: center;
 }
-
-.image-flex-bottom .image-item.top-follow-yoga-image {
-    margin-right: 5rem;
-}
-.image-flex-bottom .image-item.bottom-follow-yoga-image {
-    margin-left: 5rem;
-}
-
 
 /*section5 end*/
 
@@ -274,8 +285,6 @@ section.section6 #send-mail-form button.submit-btn {
 /*section6 end*/
 
 /*header start*/
-header {
-}
 header nav {
     display: flex;
     justify-content: space-between;
@@ -301,6 +310,8 @@ header nav {
 .mode-change, .menu {
     align-self: center;
     display: flex;
+    border: none;
+    background: initial;
 }
 
 .mode-change img,
@@ -309,6 +320,40 @@ header nav {
     height: 18px;
     margin-left: 1rem;
 }
+
+.menu-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: #fff;
+    top: 0;
+}
+button.close-button {
+    background: #fff;
+    border: none;
+    display: flex;
+    justify-self: flex-end;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+ul.menu-items {
+    margin: 2rem 3rem;
+    list-style-type: none;
+}
+li.menu-item {
+    margin-bottom: 3rem;
+}
+li.menu-item a[href="#"] {
+  display: inline-block;
+  background: linear-gradient(90deg, #FF52AF, #9F53FF);
+  background: -webkit-linear-gradient(0deg, #FF52AF, #9F53FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 /*header end*/
 
 /*footer start*/
