@@ -322,7 +322,9 @@ div .stat {
     right: 100%; 
     transform: translate(350%, 400%); 
 }
-
+.section3 .free-courses .info-box{
+    position: absolute;
+}
 
 .section3 .free-courses .number-text {
     font-size: 16px;

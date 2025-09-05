@@ -47,6 +47,7 @@
     }
 /*section3 start*/
 /* section3-mobile-light */
+@media screen and (max-width:768px) {
 
 .section3 {
     background-color: #F5F0FF;
