@@ -1,0 +1,87 @@
+/* header */
+.mode-change::before, .menu::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+}
+.mode-change::before {
+    background-image: var(--prefers-color-scheme-img);
+}
+.menu::before {
+    background-image: var(--menu-img);
+}
+
+/*section 5 */
+.follow-yoga-image-pc-div::before, .follow-yoga-image-mobile-div::before {
+    content: "";
+    display: inline-block;
+}
+
+.follow-yoga-1-pc::before, .follow-yoga-2-pc::before {
+    width: 280px;
+    height: 420px;
+}
+
+.follow-yoga-3-pc::before, .follow-yoga-4-pc::before {
+    width: 493px;
+    height: 320px;
+}
+
+.follow-yoga-1-mobile::before, .follow-yoga-2-mobile::before {
+    width: 140px;
+    height: 210px;
+}
+
+.follow-yoga-3-mobile::before, .follow-yoga-4-mobile::before {
+    width: 227px;
+    height: 147px;
+}
+.follow-yoga-1-pc::before {
+    background-image: var(--follow-1-yoga-image-pc);
+}
+.follow-yoga-1-mobile::before {
+    background-image: var(--follow-1-yoga-image-mobile);
+}
+.follow-yoga-2-pc::before {
+    background-image: var(--follow-2-yoga-image-pc);
+}
+.follow-yoga-2-mobile::before {
+    background-image: var(--follow-2-yoga-image-mobile);
+}
+.follow-yoga-3-pc::before {
+    background-image: var(--follow-3-yoga-image-pc);
+}
+.follow-yoga-3-mobile::before {
+    background-image: var(--follow-3-yoga-image-mobile);
+}
+.follow-yoga-4-pc::before {
+    background-image: var(--follow-4-yoga-image-pc);
+}
+.follow-yoga-4-mobile::before {
+    background-image: var(--follow-4-yoga-image-mobile);
+}
+
+/* section 6 */
+section.section6 .title {
+    color: var(--white-color);
+}
+
+section.section6 .description {
+    color: var(--light-color);
+}
+
+
+/* footer */
+footer {
+    background-color: var(--first-color-dark);
+}
+.footer .footer-introduction .logo div {
+    display: inline-block;
+    background: linear-gradient(90deg, #FF52AF, #9F53FF);
+    background: -webkit-linear-gradient(0deg, #FF52AF, #9F53FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--font-size-h2);
+}

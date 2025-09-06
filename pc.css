@@ -15,7 +15,7 @@
 }
 
 h1 {
-    color: var(--text-color-light);
+    color: var(--text-color);
     font-family: 'Lora';
     font-style: normal;
     font-weight: 400;
@@ -471,7 +471,7 @@ section.section5 {
 }
 
 section.section5 .follow-us-container {
-    width: 21%;
+    width: 27%;
     order: 2;
     display: flex;
     flex-direction: column;
@@ -557,6 +557,10 @@ section.section6 {
     width: 75%;
     margin: 4rem auto;
 }
+section.section6 p {
+    padding: 0;
+    color: var(--white-color);
+}
 
 section.section6 .title {
     font-size: 1.75rem;
@@ -565,7 +569,7 @@ section.section6 .title {
 
 section.section6 .description {
     font-size: 0.938rem;
-    width: 55%;
+    width: 65%;
     margin: auto;
 }
 .section6 form {
@@ -575,7 +579,7 @@ section.section6 .description {
     margin-top: 1rem;
 }
 .form-area {
-    width: 55%;
+    width: 65%;
     margin: auto;
 }
 
@@ -614,7 +618,6 @@ section.section6 .description {
 }
 .subscribe-content {
     display: flex;
-    color: #fff;
     gap: 1rem;
     justify-content: center;
 }
@@ -634,8 +637,30 @@ header .pc-menu-items {
     color: var(--title-color);
     transition: color 0.3s ease;
 }
-.pc-menu-items li a:hover {
-    color: var(--first-color);
+.pc-menu-items li.contact-menu a:hover {
+    display: inline-block;
+    background: linear-gradient(90deg, #FF52AF, #9F53FF);
+    background: -webkit-linear-gradient(0deg, #FF52AF, #9F53FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pc-menu-items ul.dropdown-menu {
+    display: none;
+}
+.pc-menu-items li.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    padding: 0.2rem 0.4rem;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    z-index: 100;
+    background: var(--body-color);
+}
+.pc-menu-items li.dropdown .dropdown-menu li {
+    padding-bottom: 0.4rem;
+}
+.pc-menu-items li.dropdown .dropdown-menu li:last-child {
+    padding-bottom: 0;
 }
 header nav {
     display: flex;
@@ -650,7 +675,7 @@ header nav {
   background: -webkit-linear-gradient(0deg, #FF52AF, #9F53FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.1rem;
+  font-size: var(--font-size-h1);
 }
 
 .menu-icon {
@@ -662,6 +687,8 @@ header nav {
 .mode-change, .menu {
     align-self: center;
     display: flex;
+    border: none;
+    background: initial;
 }
 
 .mode-change img,
@@ -725,14 +752,6 @@ footer.footer {
 
 .footer-introduction .logo {
     padding-bottom: 1rem;
-}
-.footer .footer-introduction .logo div {
-    display: inline-block;
-    background: linear-gradient(90deg, #FF52AF, #9F53FF);
-    background: -webkit-linear-gradient(0deg, #FF52AF, #9F53FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: var(--font-size-h2);
 }
 .footer .company-info-container {
     display: flex;

@@ -890,7 +890,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 0.3rem;
+        gap: 1rem;
     }
     .mode-change, .menu {
         align-self: center;
@@ -914,9 +914,11 @@
         z-index: 999;
         background: #fff;
         top: 0;
+        background-color: var(--menu-container-color);
     }
     button.close-button {
-        background: #fff;
+        background: initial;
+        color: var(--text-color);
         border: none;
         display: flex;
         justify-self: flex-end;
@@ -943,7 +945,6 @@
 
     /*footer start*/
     footer.footer {
-        background-color: var(--first-color-dark);
         font-size: 0.938rem;
         padding: 2rem 1.5rem 1.5rem;
     }
