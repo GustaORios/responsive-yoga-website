@@ -637,7 +637,11 @@ header .pc-menu-items {
     color: var(--title-color);
     transition: color 0.3s ease;
 }
-.pc-menu-items li.contact-menu a:hover {
+.pc-menu-items li.contact-menu a:hover,
+.pc-menu-items li.home a:hover,
+.menu-hover-list li a:hover,
+.pc-menu-items .dropdown .dropdown-menu li a:hover 
+ {
     display: inline-block;
     background: linear-gradient(90deg, #FF52AF, #9F53FF);
     background: -webkit-linear-gradient(0deg, #FF52AF, #9F53FF);
@@ -655,6 +659,7 @@ header .pc-menu-items {
     letter-spacing: 1px;
     z-index: 100;
     background: var(--body-color);
+    transform: translateX(-15px);
 }
 .pc-menu-items li.dropdown .dropdown-menu li {
     padding-bottom: 0.4rem;
@@ -677,7 +682,11 @@ header nav {
   -webkit-text-fill-color: transparent;
   font-size: var(--font-size-h1);
 }
-
+.menubar-container {
+    display: flex;
+    column-gap: 2rem;
+    width: 60%;
+}
 .menu-icon {
     display: flex;
     align-items: center;
@@ -728,6 +737,25 @@ li.menu-item a[href="#"] {
   background: -webkit-linear-gradient(0deg, #FF52AF, #9F53FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.menu-hover-list.night-mode {
+    display: none;
+}
+.pc-menu-items li.dropdown:hover .menu-hover-list.night-mode {
+    display: flex;
+    position: absolute;
+    background: var(--hover-nav-menu-background);
+    width: 45%;
+    justify-content: space-evenly;
+    right: 5.6rem;
+    line-height: 1.7;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    transform: translateX(10px);
+}
+.menu-hover-list.night-mode li a {
+    color: var(--hover-nav-menu-text-color);
 }
 /*header end*/
 
