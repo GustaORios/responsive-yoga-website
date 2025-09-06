@@ -187,15 +187,122 @@ div .stat {
 }
 
 
-/*section2 end*/
+    /*section2 end*/
 
-/*section3 start*/
+    /*section3 start*/
+    .section3 {
+        padding: 80px 50px;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section3 .typo {
+        text-align: left;
+    }
 
-/*section3 end*/
+    .section3 .main-title {
+        font-size: 50px;
+    }
 
-/*section4 start*/
+    .section3 .typo p {
+        font-size: 18px;
+    }
 
-/*section4 end*/
+    .section3 .section3-content {
+        height: 80vh;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 0;
+    }
+    
+    .section3 .section3-content .main-image {
+        position: relative;
+        width: 40vw;
+        height: auto;
+    }
+    
+    .section3 .info-box-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+    
+    .section3 .heart-rate {
+        top: 25%;
+        left: 20%;
+    }
+    
+    .section3 .free-courses {
+        bottom: 25%;
+        right: 20%;
+    }
+    /* section3 end */
+
+    /* section4 start */
+    .section4 {
+        padding: 80px 50px;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section4 .typo {
+        text-align: left;
+    }
+
+    .section4 .main-title {
+        font-size: 50px;
+    }
+
+    .section4 .typo p {
+        font-size: 18px;
+    }
+
+    .section4 .section4-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+    }
+    
+    .section4 .image-with-text {
+        position: relative;
+        width: 40%;
+        margin-bottom: 0;
+    }
+    
+    .section4 .top-image-container {
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    
+    .section4 .bottom-image-container {
+        top: 0;
+        left: -50px; /* 겹치는 효과 */
+        z-index: 1;
+    }
+    
+    .section4 .text-bubble {
+        position: absolute;
+    }
+    
+    .section4 .top-image-container .text-bubble {
+        top: 20%;
+        left: 80%;
+    }
+    
+    .section4 .bottom-image-container .text-bubble {
+        top: 80%;
+        left: -10%;
+        right: auto;
+    }
+
+    /*section4 end*/
 
 /*section5 start*/
 section.section5 {
