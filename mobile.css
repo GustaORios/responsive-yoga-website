@@ -22,9 +22,14 @@
         transform: rotate(10deg);
     }
 
+
     .subtitle-wrapper {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        max-width: 600px;
+        margin: auto;
     }
 
     .subtitle-div {
@@ -79,7 +84,6 @@
         flex-direction: row;
         gap: 20px;
         align-items: center;
-        flex-direction: row-reverse;
     }
 
     .stat>h2 {
@@ -316,7 +320,7 @@
 
     p {
         color: var(--text-color-light);
-        padding-left: 10px;
+        padding-left: 15px;
     }
 
     .highlight {
@@ -475,6 +479,8 @@
     /*section2 end*/
 
     /*section3 start*/
+
+
     .section3 {
         background-color: #F5F0FF;
         display: flex;
@@ -618,9 +624,11 @@
         font-weight: normal;
         color: #220953;
     }
-    /* section3 end */
 
-    /* section4 start */
+    /*section3 end*/
+    
+    /*section4 start*/
+
     .section4 {
         background-color: #F5F0FF;
         display: flex;
@@ -741,6 +749,7 @@
         color: transparent;
         font-weight: normal;
     }
+
     /*section4 end*/
 
     /*section5 start*/
