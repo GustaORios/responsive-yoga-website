@@ -7,18 +7,22 @@
     <link href="global.css" rel="stylesheet">
     <link href="pc.css" rel="stylesheet">
     <link href="mobile.css" rel="stylesheet">
+    <link href="common.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Orienta&display=swap"
+        rel="stylesheet">
+    <title>Responsive Yoga Website</title>
     <script>
         const openMenu = () => {
-            console.log('openMenu');
             document.querySelector('.menu-container').style.display = 'block';
         }
         const closeMenu = () => {
-            console.log('closeMenu');
             document.querySelector('.menu-container').style.display = 'none';
+        }
+        const toggleDarkMode = () => {
+            document.body.classList.toggle('dark-mode');
         }
     </script>
 </head>
@@ -30,24 +34,47 @@
                 <p class="title">Yoga</p>
             </div>
             <div class="menu-icon mobile-only">
-                <div class="mode-change">
-                    <img src="assets/light/moon.svg" />
-                </div>
-                <button class="menu" onclick="openMenu()">
-                    <img src="assets/light/menu.svg" />
-                </button>
+                <div class="mode-change"></div>
+                <button class="menu" onclick="openMenu()"></button>
             </div>
             <div class="menu-bar pc-only">
-                <ul class="pc-menu-items ">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service1</a></li>
-                    <li><a href="#">Service2</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="pc-menu-items">
+                    <li class="dropdown">
+                        <a href="#">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Option1</a></li>
+                            <li><a href="">Option2</a></li>
+                            <li><a href="">Option3</a></li>
+                            <li><a href="">Option4</a></li>
+                            <li><a href="">Option5</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Service1</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Option1</a></li>
+                            <li><a href="">Option2</a></li>
+                            <li><a href="">Option3</a></li>
+                            <li><a href="">Option4</a></li>
+                            <li><a href="">Option5</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Service2</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Option1</a></li>
+                            <li><a href="">Option2</a></li>
+                            <li><a href="">Option3</a></li>
+                            <li><a href="">Option4</a></li>
+                            <li><a href="">Option5</a></li>
+                        </ul>
+                    </li>
+                    <li class="contact-menu">
+                        <a href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
-            <button class="mode-change pc-only">
-                <img src="assets/light/moon.svg" />
-            </button>
+            <div class="mode-change pc-only"></div>
 
         </nav>
         <div class="menu-container">
@@ -66,10 +93,6 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-
-        </section>
-
         <section class="section1">
             <div class="section1-content">
                 <h1>
@@ -203,20 +226,20 @@
                 </div>
             </div>
             <div class="follow-yoga-1-image-container image-item">
-                <img class="mobile-only" src="assets/mobile/follow-yoga-1.png" alt="Follow Yoga 1" />
-                <img class="pc-only" src="assets/pc/follow-yoga-1.png" alt="Follow Yoga 1" />
+                <div class="mobile-only follow-yoga-image-mobile-div follow-yoga-1-mobile"></div>
+                <div class="pc-only follow-yoga-image-pc-div follow-yoga-1-pc"></div>
             </div>
             <div class="follow-yoga-2-image-container image-item right-follow-yoga-image">
-                <img class="mobile-only" src="assets/mobile/follow-yoga-2.png" alt="Follow Yoga 2" />
-                <img class="pc-only" src="assets/pc/follow-yoga-2.png" alt="Follow Yoga 2" />
+                <div class="mobile-only follow-yoga-image-mobile-div follow-yoga-2-mobile"></div>
+                <div class="pc-only follow-yoga-image-pc-div follow-yoga-2-pc"></div>
             </div>
             <div class="image-item top-follow-yoga-image follow-yoga-3-image-container">
-                <img class="mobile-only" src="assets/mobile/follow-yoga-3.png" alt="Follow Yoga 3" />
-                <img class="pc-only" src="assets/pc/follow-yoga-3.png" alt="Follow Yoga 3" />
+                <div class="mobile-only follow-yoga-image-mobile-div follow-yoga-3-mobile"></div>
+                <div class="pc-only follow-yoga-image-pc-div follow-yoga-3-pc"></div>
             </div>
             <div class="image-item follow-yoga-4-image-container">
-                <img class="mobile-only" src="assets/mobile/follow-yoga-4.png" alt="Follow Yoga 4" />
-                <img class="pc-only" src="assets/pc/follow-yoga-4.png" alt="Follow Yoga 4" />
+                <div class="mobile-only follow-yoga-image-mobile-div follow-yoga-4-mobile"></div>
+                <div class="pc-only follow-yoga-image-pc-div follow-yoga-4-pc"></div>
             </div>
         </section>
         <section class="section6">

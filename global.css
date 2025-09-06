@@ -17,7 +17,7 @@ h1,
 h2,
 h3,
 .title {
-    color: var(--text-color-light);
+    color: var(--title-color);
     font-family: "Lora", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -28,18 +28,37 @@ body {
 
 body {
     background-color: var(--body-color);
+    color: var(--text-color);
 }
 
 :root {
     --body-color: #F5F0FF;
     --container-color: #FFFFFF;
     --title-color: #220953;
-    --first-color: #E5D9FD;
+    --first-color: #8B52FF;
     --first-color-dark: #1E0849;
-    --first-color-light: #E5D9FD;
-    --text-color-light: #A197B4;
+
+    --second-color: #FF52AE;
     --gradient-color: linear-gradient(to right, #FF52AF, #9F53FF);
-    
+    --g1: linear-gradient(to right, #FD6767, #b800c900);
+    --text-color: #4B3E65;
+    --text-color-light: #A197B4;
+    --white-color: #fff;
+    --menu-container-color: #fff;
+
+    /* image */
+    --prefers-color-scheme-img: url("assets/light/moon.svg");
+    --menu-img: url("assets/light/menu.svg");
+    /* section 1 images */
+    --follow-1-yoga-image-pc: url("assets/light/pc/follow-yoga-1.png");
+    --follow-1-yoga-image-mobile: url("assets/light/mobile/follow-yoga-1.png");
+    --follow-2-yoga-image-pc: url("assets/light/pc/follow-yoga-2.png");
+    --follow-2-yoga-image-mobile: url("assets/light/mobile/follow-yoga-2.png");
+    --follow-3-yoga-image-pc: url("assets/light/pc/follow-yoga-3.png");
+    --follow-3-yoga-image-mobile: url("assets/light/mobile/follow-yoga-3.png");
+    --follow-4-yoga-image-pc: url("assets/light/pc/follow-yoga-4.png");
+    --follow-4-yoga-image-mobile: url("assets/light/mobile/follow-yoga-4.png");
+
     /* Font Sizes */
     --font-size-biggest: 2.75rem;  /* 44px */
     --font-size-bigger: 2rem;      /* 32px */
@@ -53,12 +72,34 @@ body {
 }
 @media (prefers-color-scheme: dark) {
     :root {
+        --title-color: #D1C0F1;
+        --text-color: #A094B8;
+        --body-color: #14092A;
         --first-color: #1E0849;
-        --title-color: #220953;
+        --text-color: #D1C0F1;
+        --container-color: #372A51;
+        --menu-container-color: #b3b3b3;
+
+        /* image */
+        --prefers-color-scheme-img: url("assets/dark/sun.svg");
+        --menu-img: url("assets/dark/menu.svg");
+        /* section 1 images */
+        --follow-1-yoga-image-pc: url("assets/dark/pc/follow-yoga-1.png");
+        --follow-1-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-1.png");
+        --follow-2-yoga-image-pc: url("assets/dark/pc/follow-yoga-2.png");
+        --follow-2-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-2.png");
+        --follow-3-yoga-image-pc: url("assets/dark/pc/follow-yoga-3.png");
+        --follow-3-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-3.png");
+        --follow-4-yoga-image-pc: url("assets/dark/pc/follow-yoga-4.png");
+        --follow-4-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-4.png");
+
     }
     /*.yoga-image {
       background-image: url('./assets/Box group list-dark.png');
     }*/
+    footer.footer {
+        background-color: initial;
+    }
 }
 
 /* Mobile Styles */
