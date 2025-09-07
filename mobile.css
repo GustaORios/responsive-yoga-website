@@ -57,7 +57,7 @@
         width: 190px;
         margin-top: 15px;
         background: linear-gradient(to right, #FF52AF, #9F53FF);
-        color: var(white);
+        color: var(--white);
         padding: 10px 20px;
         border-radius: 40px;
         text-decoration: none;
@@ -466,7 +466,6 @@
 
 
     .section3 {
-        background-color: #F5F0FF;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -481,7 +480,7 @@
     .section3 .main-title {
         font-size: 32px;
         font-weight: normal;
-        color: #220953;
+        color: var(--title-color);
         line-height: 1.3;
         margin-bottom: 20px;
     }
@@ -489,7 +488,7 @@
     .section3 .typo p {
         font-size: 16px;
         font-weight: normal;
-        color: #220953;
+        color: var(--text-color);
         line-height: 1.5;
         margin-bottom: 30px;
     }
@@ -500,10 +499,10 @@
         justify-content: center;
         padding: 15px 30px;
         border-radius: 30px;
-        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        background: var(--gradient-color);
         color: #fff;
         text-decoration: none;
-        font-weight: medium;
+        font-weight: normal;
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         gap: 8px;
     }
@@ -538,16 +537,18 @@
         width: 100%;
         height: 100%;
         z-index: 2;
+        text-align: left;
     }
 
     .section3 .info-box {
         position: absolute;
-        background-color: #fff;
+        background-color: var(--container-color);
         border-radius: 15px;
         padding: 15px 25px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        text-align: left;
     }
-
+    
     .section3 .heart-rate {
         top: 30%;
         left: 2%;
@@ -567,12 +568,20 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        text-align: left;
+    }
+
+    .section3 .figcaption h4,
+    .section3 .figcaption p {
+        margin: 0;
+        padding: 0;
+        text-align: left;
     }
 
     .section3 .heart-rate .bpm-text {
         font-size: 12px;
         font-weight: normal;
-        background-image: linear-gradient(to right,  #FF52AF, #9F53FF);
+        background-image: var(--gradient-color);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -581,7 +590,7 @@
     .section3 .heart-rate h4 {
         font-size: 13px;
         font-weight: normal;
-        color: #220953;
+        color: var(--text-color);
     }
 
     .section3 .free-courses {
@@ -597,7 +606,7 @@
     .section3 .free-courses .number-text {
         font-size: 12px;
         font-weight: bold;
-        background-image: linear-gradient(to right, #FF52AF, #9F53FF);
+        background-image: var(--gradient-color);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -606,15 +615,15 @@
     .section3 .free-courses h4 {
         font-size: 13px;
         font-weight: normal;
-        color: #220953;
+        color: var(--text-color);
     }
+
 
     /*section3 end*/
     
     /*section4 start*/
 
     .section4 {
-        background-color: #F5F0FF;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -629,7 +638,7 @@
     .section4 .main-title {
         font-size: 32px;
         font-weight: normal;
-        color: #220953;
+        color: var(--title-color);
         line-height: 1.2;
         margin-bottom: 20px;
     }
@@ -637,7 +646,7 @@
     .section4 .typo p {
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
-        color: #220953;
+        color: var(--text-color);
         line-height: 1.5;
         margin-bottom: 30px;
     }
@@ -648,7 +657,7 @@
         justify-content: center;
         padding: 15px 30px;
         border-radius: 30px;
-        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        background: var(--gradient-color);
         color: #fff;
         text-decoration: none;
         font-weight: normal;
@@ -675,7 +684,6 @@
         justify-content: center;
         width: 80%;
         margin-bottom: 20px;
-        border: 2px #F5F0FF;
     }
 
     .section4-content .top-image {
@@ -693,7 +701,7 @@
         right: -20%;
         transform: translateY(-50%);
         align-items: center; 
-        background-color: #fff;
+        background-color: var(--container-color);
         border-radius: 10px;
         padding: 10px 20px;
         display: flex;
@@ -727,7 +735,7 @@
 
     .section4 .text-bubble h4 {
         font-size: 14px;
-        background-image: linear-gradient(to right, #FF52AF, #9F53FF);
+        background-image: var(--gradient-color);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
