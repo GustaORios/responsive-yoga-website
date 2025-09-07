@@ -59,6 +59,9 @@ body {
     --follow-4-yoga-image-pc: url("assets/light/pc/follow-yoga-4.png");
     --follow-4-yoga-image-mobile: url("assets/light/mobile/follow-yoga-4.png");
 
+    --yoga-image: url("assets/Box-group-list.png");
+
+
     /* Font Sizes */
     --font-size-biggest: 2.75rem;  /* 44px */
     --font-size-bigger: 2rem;      /* 32px */
@@ -105,11 +108,12 @@ body {
         --follow-3-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-3.png");
         --follow-4-yoga-image-pc: url("assets/dark/pc/follow-yoga-4.png");
         --follow-4-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-4.png");
+        
+        
+        --yoga-image: url("assets/Box-group-list-dark.png");
 
     }
-    /*.yoga-image {
-      background-image: url('./assets/Box group list-dark.png');
-    }*/
+
     footer.footer {
         background-color: initial;
     }
