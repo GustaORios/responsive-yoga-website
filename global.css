@@ -26,16 +26,15 @@ body {
     color: var(--text-color);
     &:has(input[name="mode"][value="light"]:checked) {
         color-scheme: light;
-        & input.form-common-style {
-            color: var(--white-color);
-        }
 
-        & .light-mode.light-mode.light-mode {
+        & .menu-hover-list.menu-hover-list.menu-hover-list {
             display: none;
         }
-
         & .menubar-container {
-            justify-content: flex-end;
+            justify-content: center;
+        }
+        & .night-mode.night-mode.night-mode {
+            display: none;
         }
         & .top-image-dark {
             display: none;
@@ -43,21 +42,20 @@ body {
     }
     &:has(input[name="mode"][value="dark"]:checked) {
         color-scheme: dark;
+
         & footer.footer {
             background-color: var(--body-color);
         }
 
-        & .menu-hover-list.menu-hover-list.menu-hover-list {
-            display: none;
-        }
-        & .menubar-container {
-            justify-content: space-between;
-        }
-        & .night-mode.night-mode.night-mode {
-            display: none;
-        }
         & .top-image-light {
             display: none;
+        }
+        & .light-mode.light-mode.light-mode {
+            display: none;
+        }
+
+        & .menubar-container {
+            justify-content: flex-end;
         }
     }
 }
@@ -108,9 +106,6 @@ body:has(input[name="mode"][value="light"]:checked) .dark-mode {
     --font-size-h4: 0.938rem;      /* 15px */
     --font-size-small: 0.813rem;   /* 13px */
     --font-size-smaller: 0.75rem;  /* 12px */
-}
-@media (prefers-color-scheme: light) {
-
 }
 
 :root:has(input[name="mode"][value="dark"]:checked) {

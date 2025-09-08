@@ -105,6 +105,9 @@ section.section6 .description {
     color: var(--light-color);
 }
 
+section.section6 input.form-common-style[type="email"] {
+    background-color: var(--white-color);
+}
 
 /* footer */
 footer {
