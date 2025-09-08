@@ -916,6 +916,8 @@
         justify-self: flex-end;
         margin-right: 2rem;
         margin-top: 1rem;
+        right: 0;
+        position: absolute;
     }
     ul.menu-items {
         margin: 2rem 3rem;
