@@ -33,10 +33,6 @@
             <div class="logo">
                 <p class="title">Yoga</p>
             </div>
-            <div class="menu-icon mobile-only">
-                <div class="mode-change"></div>
-                <button class="menu" onclick="openMenu()"></button>
-            </div>
             <div class="menubar-container pc-only">
                 <div class="menu-bar pc-only">
                     <ul class="pc-menu-items light-mode">
@@ -181,7 +177,17 @@
                         </li>
                     </ul>
                 </div>
-                <div class="mode-change pc-only"></div>
+            </div>
+            <div class="menu-icon">
+                <div class="mode-change">
+                    <input id="light-mode" type="radio" name="mode" value="light" checked>
+                    <label for="light-mode"></label>
+                </div>
+                <div class="mode-change">
+                    <input id="dark-mode" type="radio" name="mode" value="dark">
+                    <label for="dark-mode"></label>
+                </div>
+                <button class="menu mobile-only" onclick="openMenu()"></button>
             </div>
         </nav>
         <div class="menu-container">
@@ -298,10 +304,8 @@
 
             <div class="section4-content">
                 <div class="image-with-text top-image-container">
-                    <picture>
-                         <source srcset="assets/routine-yoga-1-night.png" media="(prefers-color-scheme: dark)">
-                         <img src="assets/routine-yoga-1.png" alt="Woman doing yoga" class="top-image">
-                    </picture>
+                    <img src="assets/routine-yoga-1-night.png" alt="Woman doing yoga" class="top-image top-image-dark">                    
+                    <img src="assets/routine-yoga-1.png" alt="Woman doing yoga" class="top-image top-image-light">
                     <div class="text-bubble">
                         <img src="assets/ri_play-circle-fill.png" alt="Play icon" class="bubble-icon">
                         <h4>High Quality Video</h4>

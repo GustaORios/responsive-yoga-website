@@ -1,13 +1,32 @@
 /* header */
-.mode-change::before, .menu::before {
+.mode-change {
+    display: flex;
+}
+.mode-change-image::before, .menu::before {
     content: "";
     display: inline-block;
     width: 22px;
     height: 22px;
     background-size: cover;
 }
-.mode-change::before {
-    background-image: var(--prefers-color-scheme-img);
+.mode-change input[type=radio], .mode-change:has(input[name="mode"]:checked) {
+    display: none;
+}
+.mode-change input[type=radio]+label {
+    display: flex;
+}
+.mode-change input[type=radio]+label:before{
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+}
+.mode-change input#light-mode+label:before {
+    background-image: var(--prefers-color-scheme-light-img);
+}
+.mode-change input#dark-mode+label:before {
+    background-image: var(--prefers-color-scheme-dark-img);
 }
 .menu::before {
     background-image: var(--menu-img);

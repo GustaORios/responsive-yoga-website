@@ -23,12 +23,47 @@ h3,
 
 body {
     background-color: var(--body-color);
+    color: var(--text-color);
+    &:has(input[name="mode"][value="light"]:checked) {
+        color-scheme: light;
+        & input.form-common-style {
+            color: var(--white-color);
+        }
+
+        & .light-mode.light-mode.light-mode {
+            display: none;
+        }
+
+        & .menubar-container {
+            justify-content: flex-end;
+        }
+        & .top-image-dark {
+            display: none;
+        }
+    }
+    &:has(input[name="mode"][value="dark"]:checked) {
+        color-scheme: dark;
+        & footer.footer {
+            background-color: var(--body-color);
+        }
+
+        & .menu-hover-list.menu-hover-list.menu-hover-list {
+            display: none;
+        }
+        & .menubar-container {
+            justify-content: space-between;
+        }
+        & .night-mode.night-mode.night-mode {
+            display: none;
+        }
+        & .top-image-light {
+            display: none;
+        }
+    }
 }
 
-
-body {
-    background-color: var(--body-color);
-    color: var(--text-color);
+body:has(input[name="mode"][value="light"]:checked) .dark-mode {
+    display: none;
 }
 
 :root {
@@ -47,7 +82,8 @@ body {
     --menu-container-color: #fff;
 
     /* image */
-    --prefers-color-scheme-img: url("assets/light/moon.svg");
+    --prefers-color-scheme-dark-img: url("assets/light/moon.svg");
+    --prefers-color-scheme-light-img: url("assets/dark/sun.svg");
     --menu-img: url("assets/light/menu.svg");
     /* section 1 images */
     --follow-1-yoga-image-pc: url("assets/light/pc/follow-yoga-1.png");
@@ -74,57 +110,35 @@ body {
     --font-size-smaller: 0.75rem;  /* 12px */
 }
 @media (prefers-color-scheme: light) {
-    .menu-hover-list.menu-hover-list.menu-hover-list {
-        display: none;
-    }
-    .menubar-container {
-        justify-content: space-between;
-    }
-    .night-mode.night-mode.night-mode {
-        display: none;
-    }
+
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --title-color: #D1C0F1;
-        --text-color: #A094B8;
-        --body-color: #14092A;
-        --first-color: #1E0849;
-        --text-color: #D1C0F1;
-        --container-color: #372A51;
-        --menu-container-color: #b3b3b3;
-        --hover-nav-menu-background: #D1C0F1;
-        --hover-nav-menu-text-color: #220953;
-        /* image */
-        --prefers-color-scheme-img: url("assets/dark/sun.svg");
-        --menu-img: url("assets/dark/menu.svg");
-        /* section 1 images */
-        --follow-1-yoga-image-pc: url("assets/dark/pc/follow-yoga-1.png");
-        --follow-1-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-1.png");
-        --follow-2-yoga-image-pc: url("assets/dark/pc/follow-yoga-2.png");
-        --follow-2-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-2.png");
-        --follow-3-yoga-image-pc: url("assets/dark/pc/follow-yoga-3.png");
-        --follow-3-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-3.png");
-        --follow-4-yoga-image-pc: url("assets/dark/pc/follow-yoga-4.png");
-        --follow-4-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-4.png");
-        
-        
-        --yoga-image: url("assets/Box-group-list-dark.png");
+:root:has(input[name="mode"][value="dark"]:checked) {
+    --title-color: #D1C0F1;
+    --text-color: #A094B8;
+    --body-color: #14092A;
+    --first-color: #1E0849;
+    --text-color: #D1C0F1;
+    --container-color: #372A51;
+    --menu-container-color: #b3b3b3;
+    --hover-nav-menu-background: #D1C0F1;
+    --hover-nav-menu-text-color: #220953;
+    /* image */
+    --prefers-color-scheme-img: url("assets/dark/sun.svg");
+    --menu-img: url("assets/dark/menu.svg");
+    /* section 1 images */
+    --follow-1-yoga-image-pc: url("assets/dark/pc/follow-yoga-1.png");
+    --follow-1-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-1.png");
+    --follow-2-yoga-image-pc: url("assets/dark/pc/follow-yoga-2.png");
+    --follow-2-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-2.png");
+    --follow-3-yoga-image-pc: url("assets/dark/pc/follow-yoga-3.png");
+    --follow-3-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-3.png");
+    --follow-4-yoga-image-pc: url("assets/dark/pc/follow-yoga-4.png");
+    --follow-4-yoga-image-mobile: url("assets/dark/mobile/follow-yoga-4.png");
+    
+    
+    --yoga-image: url("assets/Box-group-list-dark.png");
 
-    }
-
-    footer.footer {
-        background-color: initial;
-    }
-
-    .light-mode.light-mode.light-mode {
-        display: none;
-    }
-
-    .menubar-container {
-        justify-content: flex-end;
-    }
 }
 
 /* Mobile Styles */
